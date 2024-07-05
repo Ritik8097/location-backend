@@ -1,7 +1,14 @@
 {
-    "version": 2,
-    "name": "real-time-tracking",
-    "builds":[{"src":"app.js" , "use":"@vercel/node"}],
-    "routes": [{"src" : "/(.*)", "dest":"/app.js"}]
-
+  "builds": [
+    {
+      "src": "app.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app.js"
+    }
+  ]
 }
