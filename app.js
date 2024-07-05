@@ -29,7 +29,10 @@ io.on("connection", function(socket) {
 app.get('/', (req, res) => {
    res.render("index");
 });
-
+app.get('/data',(req,res)=>{
+    res.send("hii");
+}
+)
 // Start the server
 server.listen(9000, () => {
     console.log("Server is running on http://localhost:9000");
