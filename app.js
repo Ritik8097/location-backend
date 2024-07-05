@@ -27,7 +27,7 @@ io.on("connection", function(socket) {
 
 // Route for rendering the index page
 app.get('/', (req, res) => {
-   res.render("index");
+   res.render("index.ejs");
 });
 app.get('/data',(req,res)=>{
     res.send("hii");
